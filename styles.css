@@ -32,7 +32,7 @@ Popup
     top: 0; left: 0; right: 0; bottom: 0;
     margin: auto; /*aligns our popup to the center*/
     height: 15rem;
-    width: 40rem;
+    width: 50rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,13 +65,16 @@ Popup
 }
   
 .pop-up-sub {
-    padding-top: 1rem;
+    padding-top: 3rem;
     text-align: center;
     color: white;
     font-weight: 300;
     font-family: roboto;
 }
 
+.sub-fields {
+    display: flex;
+}
 .close-btn {
     position: absolute;
     top: 0;        /* we put this button at */
@@ -129,7 +132,7 @@ NAVBAR
     margin-left: 2rem;
     transition: all 200ms;
 }
-  
+
 .nav-btn:hover {
     transform: scale(1.1);
 }
@@ -140,6 +143,25 @@ NAVBAR
 
 .nav-btn.logo:hover {
     transform: scale(1.1) rotate(5deg) translateX(10px);
+}
+
+.nav-btn.sub {
+    margin-left: 1rem;
+    font-size: 1rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background: #e74c3c;
+    transition: all 200ms;
+    cursor: pointer;
+}
+
+.nav-btn.sub:hover {
+    transform: scale(1.1) translateX(10px);
 }
   
 .nav-btn.right {
@@ -197,7 +219,7 @@ HERO
 }
 
 .btn-cta:hover {
-    /*transform: scale(1.02);*/
+    transform: scale(1.02);
     box-shadow: 0 2px 1px rgba(0,0,0,.3);
 }
 
@@ -679,8 +701,10 @@ Footer
 }
 
 .footer-cta {
+    padding: 10px;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .footer-cta p {
@@ -721,5 +745,20 @@ h3 {
 }
 
 .more-links {
+    cursor: pointer;
+}
+
+.call-to-action-btn {
+    text-align: center;
+    font-size: 1rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: none;
+    border-radius: 3px;
+    color: #2c3e50;
+    background: white;
+    transition: all 200ms;
     cursor: pointer;
 }
