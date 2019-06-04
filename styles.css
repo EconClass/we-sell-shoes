@@ -206,10 +206,10 @@ clients
     transform: scale(1.05);
 }
 
+
 /*******************
 gallery
 *******************/
-
 
 .gallery-sec {
     /*padding: .3rem;*/
@@ -328,8 +328,7 @@ gallery
     background-size: cover;  
     background-position: -40px;
 }
-  
-  
+
 .g {
     background: url('https://images.pexels.com/photos/373964/pexels-photo-373964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-position: -100px;
@@ -356,11 +355,28 @@ gallery
     padding: 5px;
     color: white;
 }
-  
-  /* We need to set the margin used on flex items to 0 as we have gaps in grid.  */
-  
+
+/* We need to set the margin used on flex items to 0 as we have gaps in grid.  */
 @supports (display: grid) {
     .gallery > * {
         margin: 0;
     }
+}
+
+/****************
+subscribe 2
+****************/
+
+.subscribe-2 {
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('https://images.pexels.com/photos/637076/pexels-photo-637076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
